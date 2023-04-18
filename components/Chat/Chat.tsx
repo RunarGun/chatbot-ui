@@ -352,30 +352,28 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
       {!(apiKey || serverSideApiKeyIsSet) ? (
         <div className="mx-auto flex h-full w-[300px] flex-col justify-center space-y-6 sm:w-[600px]">
           <div className="text-center text-4xl font-bold text-black dark:text-white">
-            Welcome to Chatbot UI
+            Velkommen til Smarte Siri
           </div>
           <div className="text-center text-lg text-black dark:text-white">
-            <div className="mb-8">{`Chatbot UI is an open source clone of OpenAI's ChatGPT UI.`}</div>
+            <div className="mb-8">{`Smarte Siri er basert på ChatGPT 4 og er trent til å hjelpe deg med vanskelige spørsmål om økonomi som er vanskelig å google seg til og kanskje er litt flaut å stille til de du kjenner.`}</div>
             <div className="mb-2 font-bold">
-              Important: Chatbot UI is 100% unaffiliated with OpenAI.
+              Foruten å kunne det samme som sin amerikanske fetter ChatGPT, har også Smarte Siri en bachelor i Eiendomsmegling og Master i økonomi*
             </div>
           </div>
           <div className="text-center text-gray-500 dark:text-gray-400">
             <div className="mb-2">
-              Chatbot UI allows you to plug in your API key to use this UI with
-              their API.
+              Bruk API Key til OpenAI for benytte deg av Smarte Siri. 
             </div>
             <div className="mb-2">
-              It is <span className="italic">only</span> used to communicate
-              with their API.
+              Tjenesten blir brukt til å kommunisere med deres API 
             </div>
             <div className="mb-2">
               {t(
-                'Please set your OpenAI API key in the bottom left of the sidebar.',
+                'For å komme i gang, sett inn din OpenAI API key in nede til venstre i menyen.',
               )}
             </div>
             <div>
-              {t("If you don't have an OpenAI API key, you can get one here: ")}
+              {t("Hvis du ikke har en API Key, kan det veldig enkelt skaffes her: ")}
               <a
                 href="https://platform.openai.com/account/api-keys"
                 target="_blank"
